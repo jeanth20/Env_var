@@ -17,3 +17,42 @@ Now, to add or modify an environment variable, we can use the export command fol
 
 Multiple values for a variable need to be separated by a colon. The colon indicates to the operating system that one value has ended and another has begun. The variables can be created and removed from the shell easily, and can be done whenever required. But changing important variables may mess with the operating system's functionalities so it's important to be careful.
 And that's basically all you need to know for how to set environment variables in Linux.
+
+
+
+
+in terminal:
+#list all set env var
+jean@jean-EliteBook:~$ set
+BASH=/bin/bash
+LOGNAME=jean
+...
+
+#display var value with
+jean@jean-EliteBook:~$ echo "$HOME"
+/home/jean
+jean@jean-EliteBook:~$ 
+
+
+# Add or modify
+# add
+jean@jean-EliteBook:~$ 
+jean@jean-EliteBook:~$ export abc=dir/path/
+jean@jean-EliteBook:~$ echo "$abc"
+dir/path/
+jean@jean-EliteBook:~$ 
+
+
+# modify : seperates multinple values in one variable
+jean@jean-EliteBook:~$ export abc=dir/path/:dir/path2
+jean@jean-EliteBook:~$ echo "$abc"
+dir/path/:dir/path2
+jean@jean-EliteBook:~$ 
+
+
+
+
+
+
+
+

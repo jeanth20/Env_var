@@ -1,0 +1,19 @@
+In this tutorial, you will learn how to set environment variables in linux.
+Linux based operating systems use bash shell. The shell environment variables are used for several purposes, from storing data, storing software configurations, set terminal settings, and changing shell environment. The environment variables are normally created by the operating system during installation, or by different software as per the required need. Apart from that, in linux, to set environment variables, we first need to access the terminal application. That's because the user has the privilege to add, edit, and remove different variables at will.
+
+Step # 1 -- All variables on terminal
+
+In linux, to set environment variables we first need to access shell environment variables.
+For that, we will need to open the terminal by searching for it in the applications menu, or selecting it from the dock on the left.
+Once the terminal is opened up, to check for all environment variables, type the set command and press enter. This will list all the environment variables stored in the shell.
+
+Step # 2 -- One variable at a time
+
+The amount of these variables can become a very long list and locating one specific variable can become a tough task. Fortunately Linux allows us to display the value of one shell variable by using the echo command along with the name of the variable. This makes the task very easy.
+
+Step # 3 -- Changing a variable
+
+Now, to add or modify an environment variable, we can use the export command followed by the name of the variable and the values that go with it.
+
+Multiple values for a variable need to be separated by a colon. The colon indicates to the operating system that one value has ended and another has begun. The variables can be created and removed from the shell easily, and can be done whenever required. But changing important variables may mess with the operating system's functionalities so it's important to be careful.
+And that's basically all you need to know for how to set environment variables in Linux.

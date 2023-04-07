@@ -97,6 +97,51 @@ That's it! You have now successfully declared environment variables for your dat
 
 
 
+Here are the steps to declare environment variables for your database connection in a virtual environment:
 
+    Activate your virtual environment by running the following command:
+
+    bash
+
+ source /path/to/venv/bin/activate
+
+Replace /path/to/venv with the actual path to your virtual environment.
+
+In your activated virtual environment, install the python-dotenv package by running the following command:
+
+ pip install python-dotenv
+
+This package allows you to load environment variables from a .env file in your project directory.
+
+In your project directory, create a new file called .env and add the following lines to declare your environment variables:
+
+php
+
+ DB_HOST=<database_host>
+ DB_USER=<database_username>
+ DB_PASSWORD=<database_password>
+ DB_NAME=<database_name>
+
+Replace <database_host>, <database_username>, <database_password>, and <database_name> with the appropriate values for your database connection.
+
+In your Python script, you can now load the environment variables from the .env file using the dotenv module:
+
+lua
+
+     from dotenv import load_dotenv
+     import os
+     
+     # Load environment variables from .env file
+     load_dotenv()
+     
+     # Get environment variables
+     db_host = os.getenv('DB_HOST')
+     db_user = os.getenv('DB_USER')
+     db_password = os.getenv('DB_PASSWORD')
+     db_name = os.getenv('DB_NAME')
+
+    You can then use these variables to establish a database connection in your Python script.
+
+That's it! You have now successfully declared environment variables for your database connection in a virtual environment using the python-dotenv package.
 
 
